@@ -8,10 +8,10 @@ import sys
 
 # Complete the solve function below.
 def solve(meal_cost, tip_percent, tax_percent):
-    tip = int(meal_cost) * (tip_percent / 100)
-    tax = int(meal_cost) * (tax_percent / 100)
-    total_cost = meal_cost + tip + tax
-    print (math.floor(total_cost))
+    tip=float(meal_cost*(tip_percent/100)) 
+    tax=float(meal_cost*(tax_percent/100)) 
+    total_cost=float(meal_cost+tip+tax) 
+    print(round(total_cost))
 
 if __name__ == '__main__':
     meal_cost = float(input())
@@ -21,3 +21,6 @@ if __name__ == '__main__':
     tax_percent = int(input())
 
     solve(meal_cost, tip_percent, tax_percent)
+
+
+
